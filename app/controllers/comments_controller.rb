@@ -10,7 +10,7 @@ class CommentsController < ApplicationController
   end
 
   def index
-    @comments = Comment.all
+    @comments = Comment.page(params[:page])
 
     render("comments/index.html.erb")
   end
