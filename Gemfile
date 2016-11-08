@@ -60,3 +60,5 @@ gem 'underscore-rails'
 gem "rollbar"
 gem "kaminari"
 gem "bootstrap4-kaminari-views"
+gem 'seed_dump', :git => 'https://github.com/murugan-r/seed_dump.git'
+gem 'activerecord-import'
