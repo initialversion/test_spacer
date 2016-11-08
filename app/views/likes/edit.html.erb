@@ -33,7 +33,7 @@
           Photo
         </label>
 
-        <input type="text" id="photo_id" name="photo_id" placeholder="Photo" class="form-control" value="<%= @like.photo_id %>">
+        <%= select_tag(:photo_id, options_from_collection_for_select(Photo.all, :id, :created_at, @like.photo_id), :class => "form-control") %>
       </div>
 
       <button class="btn btn-warning">
